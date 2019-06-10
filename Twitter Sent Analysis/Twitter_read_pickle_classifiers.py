@@ -35,14 +35,14 @@ class VoteClassifier(ClassifierI):
         conf = choice_votes / len(votes)
         return conf
         
-short_pos = open("Data Sets/positive.txt","r").read()
-short_neg = open("Data Sets/negative.txt","r").read()
+short_pos = open("Data Sets/positive.txt", "r").read()
+short_neg = open("Data Sets/negative.txt", "r").read()
 
 all_words = []
 documents = []
 
 #  j is adject, r is adverb, and v is verb
-#allowed_word_types = ["J","R","V"]
+# allowed_word_types = ["J","R","V"]
 allowed_word_types = ["J"]
 
 
